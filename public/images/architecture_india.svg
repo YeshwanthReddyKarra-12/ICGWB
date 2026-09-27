@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="archBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="50%" stop-color="#334155"/>
+      <stop offset="100%" stop-color="#475569"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="700" height="400" fill="url(#archBg)"/>
+
+  <!-- Blueprint Architectural Grid -->
+  <g stroke="rgba(255,255,255,0.08)" stroke-width="1">
+    <line x1="100" y1="0" x2="100" y2="400"/>
+    <line x1="200" y1="0" x2="200" y2="400"/>
+    <line x1="300" y1="0" x2="300" y2="400"/>
+    <line x1="400" y1="0" x2="400" y2="400"/>
+    <line x1="500" y1="0" x2="500" y2="400"/>
+    <line x1="600" y1="0" x2="600" y2="400"/>
+    <line x1="0" y1="100" x2="700" y2="100"/>
+    <line x1="0" y1="200" x2="700" y2="200"/>
+    <line x1="0" y1="300" x2="700" y2="300"/>
+  </g>
+
+  <!-- Modern Architectural High-Rise Isometric Shapes -->
+  <g transform="translate(350, 180) scale(1.1)">
+    <!-- Building 1 -->
+    <polygon points="-70,90 -70,-30 -20,-60 -20,90" fill="#38bdf8" opacity="0.8"/>
+    <polygon points="-20,-60 20,-40 20,90 -20,90" fill="#0284c7"/>
+    <!-- Building 2 (Tower) -->
+    <polygon points="10,90 10,-80 50,-100 50,90" fill="#fdba74" opacity="0.9"/>
+    <polygon points="50,-100 80,-80 80,90 50,90" fill="#ea580c"/>
+    <!-- Draft Compass Tool -->
+    <line x1="-120" y1="-40" x2="-80" y2="20" stroke="#facc15" stroke-width="3"/>
+    <line x1="-120" y1="-40" x2="-140" y2="20" stroke="#facc15" stroke-width="3"/>
+    <circle cx="-120" cy="-40" r="5" fill="#ca8a04"/>
+  </g>
+
+  <!-- Badges -->
+  <g transform="translate(40, 40)">
+    <rect width="210" height="32" rx="16" fill="rgba(234, 88, 12, 0.95)"/>
+    <text x="105" y="21" fill="#ffffff" font-size="12" font-weight="bold" font-family="sans-serif" text-anchor="middle">🇮🇳 COA ARCHITECT • NATA / SPA</text>
+  </g>
+
+  <g transform="translate(470, 40)">
+    <rect width="190" height="32" rx="16" fill="rgba(255, 255, 255, 0.92)"/>
+    <text x="95" y="21" fill="#0284c7" font-size="12" font-weight="bold" font-family="sans-serif" text-anchor="middle">₹4.5 LPA - ₹20 LPA</text>
+  </g>
+
+  <text x="350" y="355" fill="#ffffff" font-size="22" font-weight="800" font-family="sans-serif" text-anchor="middle" letter-spacing="1">ARCHITECT &amp; URBAN PLANNER (COA)</text>
+  <text x="350" y="380" fill="#e2e8f0" font-size="13" font-family="sans-serif" text-anchor="middle">5-Year B.Arch • NATA / JEE Paper 2 • SPA Delhi / CEPT Ahmedabad</text>
+</svg>

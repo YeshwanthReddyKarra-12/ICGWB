@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="medBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#064e3b"/>
+      <stop offset="60%" stop-color="#047857"/>
+      <stop offset="100%" stop-color="#0f766e"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="700" height="400" fill="url(#medBg)"/>
+
+  <!-- Hospital Pulse Line -->
+  <path d="M 0 200 L 220 200 L 240 140 L 260 250 L 280 170 L 300 220 L 320 200 L 700 200" fill="none" stroke="rgba(255,255,255,0.18)" stroke-width="3"/>
+
+  <!-- Stethoscope & Caduceus Emblem -->
+  <circle cx="350" cy="180" r="85" fill="#ffffff" opacity="0.12"/>
+  <circle cx="350" cy="180" r="70" fill="#ffffff" opacity="0.95" filter="drop-shadow(0 10px 15px rgba(0,0,0,0.3))"/>
+  
+  <!-- Red Medical Cross -->
+  <rect x="336" y="135" width="28" height="90" rx="6" fill="#dc2626"/>
+  <rect x="305" y="166" width="90" height="28" rx="6" fill="#dc2626"/>
+
+  <!-- Stethoscope overlay -->
+  <path d="M 270 120 C 270 230, 430 230, 430 120" fill="none" stroke="#1e293b" stroke-width="8" stroke-linecap="round"/>
+  <path d="M 350 215 L 350 255" fill="none" stroke="#1e293b" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="350" cy="265" r="16" fill="#0284c7" stroke="#ffffff" stroke-width="4"/>
+
+  <!-- Badges -->
+  <g transform="translate(40, 40)">
+    <rect width="210" height="32" rx="16" fill="rgba(234, 88, 12, 0.95)"/>
+    <text x="105" y="21" fill="#ffffff" font-size="12" font-weight="bold" font-family="sans-serif" text-anchor="middle">🇮🇳 NEET UG • AIIMS / NMC</text>
+  </g>
+
+  <g transform="translate(480, 40)">
+    <rect width="180" height="32" rx="16" fill="rgba(255, 255, 255, 0.92)"/>
+    <text x="90" y="21" fill="#047857" font-size="12" font-weight="bold" font-family="sans-serif" text-anchor="middle">₹8 LPA - ₹35 LPA</text>
+  </g>
+
+  <text x="350" y="355" fill="#ffffff" font-size="22" font-weight="800" font-family="sans-serif" text-anchor="middle" letter-spacing="1">MEDICAL DOCTOR &amp; SPECIALIST (MBBS)</text>
+  <text x="350" y="380" fill="#a7f3d0" font-size="13" font-family="sans-serif" text-anchor="middle">5.5 Years MBBS • AIIMS / JIPMER / Govt Medical Colleges</text>
+</svg>

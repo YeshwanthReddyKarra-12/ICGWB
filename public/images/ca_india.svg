@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="caBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#14532d"/>
+      <stop offset="50%" stop-color="#166534"/>
+      <stop offset="100%" stop-color="#15803d"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="700" height="400" fill="url(#caBg)"/>
+
+  <!-- Audit Ledger Document / Calculator Shape -->
+  <rect x="220" y="85" width="260" height="200" rx="14" fill="#ffffff" filter="drop-shadow(0 15px 25px rgba(0,0,0,0.3))"/>
+  <rect x="240" y="105" width="220" height="35" rx="6" fill="#f0fdf4"/>
+  <text x="350" y="128" fill="#15803d" font-size="14" font-weight="bold" font-family="sans-serif" text-anchor="middle">ICAI STATUTORY AUDIT</text>
+
+  <!-- Big Indian Rupee Symbol inside ledger -->
+  <text x="350" y="215" fill="#047857" font-size="68" font-weight="900" font-family="sans-serif" text-anchor="middle">₹</text>
+
+  <!-- Audit Stamp -->
+  <circle cx="410" cy="235" r="32" fill="none" stroke="#dc2626" stroke-width="3" stroke-dasharray="6,4"/>
+  <text x="410" y="240" fill="#dc2626" font-size="10" font-weight="bold" font-family="sans-serif" text-anchor="middle">VERIFIED</text>
+
+  <!-- Badges -->
+  <g transform="translate(40, 40)">
+    <rect width="210" height="32" rx="16" fill="rgba(234, 88, 12, 0.95)"/>
+    <text x="105" y="21" fill="#ffffff" font-size="12" font-weight="bold" font-family="sans-serif" text-anchor="middle">🇮🇳 ICAI CHARTERED ACCOUNTANT</text>
+  </g>
+
+  <g transform="translate(470, 40)">
+    <rect width="190" height="32" rx="16" fill="rgba(255, 255, 255, 0.92)"/>
+    <text x="95" y="21" fill="#047857" font-size="12" font-weight="bold" font-family="sans-serif" text-anchor="middle">₹8.5 LPA - ₹30 LPA</text>
+  </g>
+
+  <text x="350" y="355" fill="#ffffff" font-size="22" font-weight="800" font-family="sans-serif" text-anchor="middle" letter-spacing="1">CHARTERED ACCOUNTANT (ICAI CA)</text>
+  <text x="350" y="380" fill="#bbf7d0" font-size="13" font-family="sans-serif" text-anchor="middle">CA Foundation • Inter • Articleship • Corporate Audit &amp; GST</text>
+</svg>

@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#1e3a8a"/>
+      <stop offset="100%" stop-color="#0369a1"/>
+    </linearGradient>
+    <linearGradient id="codeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#818cf8"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="700" height="400" fill="url(#bgGrad)"/>
+  
+  <!-- Subtle Circuit Grid -->
+  <g stroke="rgba(255,255,255,0.06)" stroke-width="1.5">
+    <line x1="50" y1="0" x2="50" y2="400"/>
+    <line x1="150" y1="0" x2="150" y2="400"/>
+    <line x1="250" y1="0" x2="250" y2="400"/>
+    <line x1="350" y1="0" x2="350" y2="400"/>
+    <line x1="450" y1="0" x2="450" y2="400"/>
+    <line x1="550" y1="0" x2="550" y2="400"/>
+    <line x1="650" y1="0" x2="650" y2="400"/>
+    <line x1="0" y1="100" x2="700" y2="100"/>
+    <line x1="0" y1="200" x2="700" y2="200"/>
+    <line x1="0" y1="300" x2="700" y2="300"/>
+  </g>
+
+  <!-- Laptop / Code Window -->
+  <rect x="180" y="80" width="340" height="210" rx="14" fill="#090d16" stroke="rgba(56, 189, 248, 0.4)" stroke-width="2"/>
+  <rect x="180" y="80" width="340" height="32" rx="14" fill="#131c2e"/>
+  <circle cx="205" cy="96" r="5" fill="#ef4444"/>
+  <circle cx="220" cy="96" r="5" fill="#f59e0b"/>
+  <circle cx="235" cy="96" r="5" fill="#10b981"/>
+  <text x="350" y="101" fill="#94a3b8" font-size="11" font-family="monospace" text-anchor="middle">solution.cpp • Indian Tech Hub</text>
+
+  <!-- Code Lines -->
+  <text x="205" y="140" fill="#38bdf8" font-size="13" font-family="monospace">#include &lt;iostream&gt;</text>
+  <text x="205" y="165" fill="#c084fc" font-size="13" font-family="monospace">class <tspan fill="#fde047">SoftwareEngineer</tspan> {</text>
+  <text x="220" y="190" fill="#4ade80" font-size="12" font-family="monospace">// IIT / NIT / IIIT Campus Hiring</text>
+  <text x="220" y="215" fill="#e2e8f0" font-size="12" font-family="monospace">string hub = "Bengaluru / Hyderabad";</text>
+  <text x="220" y="240" fill="#fb923c" font-size="12" font-family="monospace">int ctc = 4500000; // ₹45 LPA</text>
+  <text x="205" y="265" fill="#c084fc" font-size="13" font-family="monospace">};</text>
+
+  <!-- Laptop Base -->
+  <path d="M 130 290 L 570 290 L 590 305 L 110 305 Z" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+
+  <!-- Indian Context Badges -->
+  <g transform="translate(40, 40)">
+    <rect width="180" height="32" rx="16" fill="rgba(234, 88, 12, 0.9)"/>
+    <text x="90" y="21" fill="#ffffff" font-size="12" font-weight="bold" font-family="sans-serif" text-anchor="middle">🇮🇳 INDIAN IT &amp; TECH</text>
+  </g>
+
+  <g transform="translate(480, 40)">
+    <rect width="180" height="32" rx="16" fill="rgba(16, 185, 129, 0.9)"/>
+    <text x="90" y="21" fill="#ffffff" font-size="12" font-weight="bold" font-family="sans-serif" text-anchor="middle">₹6 LPA - ₹45 LPA</text>
+  </g>
+
+  <text x="350" y="360" fill="#ffffff" font-size="22" font-weight="800" font-family="sans-serif" text-anchor="middle" letter-spacing="1">SOFTWARE DEVELOPMENT ENGINEER</text>
+  <text x="350" y="382" fill="#93c5fd" font-size="13" font-family="sans-serif" text-anchor="middle">JEE Main &amp; Advanced • B.Tech CSE • Bengaluru / Hyderabad</text>
+</svg>

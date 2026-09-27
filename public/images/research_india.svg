@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="sciBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b"/>
+      <stop offset="50%" stop-color="#312e81"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="700" height="400" fill="url(#sciBg)"/>
+
+  <!-- Atom Model & Mathematical Equations -->
+  <g transform="translate(350, 180) scale(1.15)">
+    <!-- Atom Orbits -->
+    <ellipse cx="0" cy="0" rx="90" ry="35" fill="none" stroke="rgba(96, 165, 250, 0.7)" stroke-width="2" transform="rotate(30)"/>
+    <ellipse cx="0" cy="0" rx="90" ry="35" fill="none" stroke="rgba(244, 114, 182, 0.7)" stroke-width="2" transform="rotate(-30)"/>
+    <ellipse cx="0" cy="0" rx="90" ry="35" fill="none" stroke="rgba(250, 204, 21, 0.7)" stroke-width="2" transform="rotate(90)"/>
+    
+    <!-- Electrons -->
+    <circle cx="75" cy="45" r="6" fill="#38bdf8"/>
+    <circle cx="-75" cy="45" r="6" fill="#f472b6"/>
+    <circle cx="0" cy="-90" r="6" fill="#facc15"/>
+
+    <!-- Central Nucleus -->
+    <circle cx="0" cy="0" r="22" fill="#ffffff" filter="drop-shadow(0 0 15px rgba(255,255,255,0.8))"/>
+    <text x="0" y="6" fill="#1e3a8a" font-size="16" font-weight="900" font-family="serif" text-anchor="middle">ψ</text>
+  </g>
+
+  <!-- Badges -->
+  <g transform="translate(40, 40)">
+    <rect width="230" height="32" rx="16" fill="rgba(234, 88, 12, 0.95)"/>
+    <text x="115" y="21" fill="#ffffff" font-size="12" font-weight="bold" font-family="sans-serif" text-anchor="middle">🇮🇳 IISC BENGALURU • NIRF #1</text>
+  </g>
+
+  <g transform="translate(470, 40)">
+    <rect width="190" height="32" rx="16" fill="rgba(255, 255, 255, 0.92)"/>
+    <text x="95" y="21" fill="#1d4ed8" font-size="12" font-weight="bold" font-family="sans-serif" text-anchor="middle">₹12 LPA - ₹25 LPA</text>
+  </g>
+
+  <text x="350" y="355" fill="#ffffff" font-size="22" font-weight="800" font-family="sans-serif" text-anchor="middle" letter-spacing="1">RESEARCH SCIENTIST &amp; MATHEMATICIAN</text>
+  <text x="350" y="380" fill="#bfdbfe" font-size="13" font-family="sans-serif" text-anchor="middle">IISc Bengaluru • IISERs • ISI Kolkata • Quantum Physics &amp; Mathematics</text>
+</svg>
