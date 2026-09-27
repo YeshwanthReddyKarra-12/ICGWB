@@ -15,6 +15,9 @@ const statsRoutes = require('./routes/statsRoutes');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+// Trust reverse proxy for live deployment environments (e.g. Render, Railway, Glitch, Heroku)
+app.set('trust proxy', 1);
+
 // Middleware
 app.use(cors({
   origin: true,
@@ -30,8 +33,9 @@ app.use(
     resave: false,
     saveUninitialized: false,
     cookie: {
-      secure: false, // Set to true in HTTPS production
+      secure: false, // Set to true if running behind forced HTTPS
       httpOnly: true,
+      sameSite: 'lax',
       maxAge: 1000 * 60 * 60 * 24 * 7 // 7 days session
     }
   })
@@ -91,6 +95,11 @@ app.use('/api/*', (req, res) => {
   res.status(404).json({ success: false, message: 'API route not found' });
 });
 
+// Fallback for non-API routes to index.html
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+});
+
 // Global error handling middleware
 app.use((err, req, res, next) => {
   console.error('Unhandled Server Error:', err);
@@ -101,8 +110,8 @@ app.use((err, req, res, next) => {
   });
 });
 
-// Start Express Server
-app.listen(PORT, () => {
+// Start Express Server listening on all interfaces (0.0.0.0 for live cloud deployment)
+app.listen(PORT, '0.0.0.0', () => {
   console.log(`=======================================================`);
   console.log(`🚀 INTELLIGENT CAREER GUIDANCE WEB PORTAL is LIVE!`);
   console.log(`🌐 Server running at: http://localhost:${PORT}`);

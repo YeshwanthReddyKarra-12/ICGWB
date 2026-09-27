@@ -45,4 +45,23 @@ db.allAsync = function (sql, params = []) {
   });
 };
 
+// Auto-initialize database tables and seed data if not present
+db.serialize(() => {
+  db.get("SELECT name FROM sqlite_master WHERE type='table' AND name='users'", (err, row) => {
+    if (err) {
+      console.error('Error checking database tables:', err.message);
+    } else if (!row) {
+      console.log('⚡ Database tables not found. Auto-seeding initial ICGWB dataset...');
+      try {
+        const seedDatabase = require('../seed');
+        seedDatabase()
+          .then(() => console.log('✅ Auto-seeding completed successfully!'))
+          .catch(sErr => console.error('Auto-seeding failed:', sErr.message));
+      } catch (sErr) {
+        console.error('Auto-seeding import error:', sErr.message);
+      }
+    }
+  });
+});
+
 module.exports = db;
